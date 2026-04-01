@@ -14,7 +14,7 @@
     --border: #E2DDD5;
     --text: #b4ba8f;
     --text2: #6B6560;
-    --text3: #A39E97;
+    --text3: #323232;
     --accent: #2D5016;
     --accent-light: #EAF0E2;
     --accent2: #8B4513;
@@ -26,7 +26,7 @@
     --pesquisando-bg: #FDF0E8;
     --pendente: #5A5450;
     --pendente-bg: #F0EDE6;
-    --essencial: #8B2020;
+    --essencial: #c63b3b;
     --essencial-bg: #FCEAEA;
     --recomendado: #1A4A7A;
     --recomendado-bg: #E8F0FA;
@@ -575,7 +575,7 @@
 
 <header>
   <div class="header-logo">
-    ⌂ Nossa Casa <span>enxoval 2025</span>
+    🏡 Nossa Casa <span>enxoval 2025</span>
   </div>
   <div class="header-actions">
     <button class="btn-header" onclick="exportCSV()">Exportar CSV</button>
@@ -588,10 +588,10 @@
     <div class="sidebar-section">
       <div class="sidebar-label">Visão geral</div>
       <div class="nav-item active" onclick="showView('dashboard', this)">
-        <span class="nav-icon">◈</span> Dashboard
+        <span class="nav-icon">📈</span> Dashboard
       </div>
       <div class="nav-item" onclick="showView('orcamento', this)">
-        <span class="nav-icon">◎</span> Orçamento
+        <span class="nav-icon">💰</span> Orçamento
         <span class="nav-badge" id="badge-orc">R$0</span>
       </div>
     </div>
@@ -602,15 +602,15 @@
         <span class="nav-badge" id="badge-cozinha">0</span>
       </div>
       <div class="nav-item" onclick="showView('quarto', this)" id="nav-quarto">
-        <span class="nav-icon">🛏</span> Quarto
+        <span class="nav-icon">🛏️</span> Quarto
         <span class="nav-badge" id="badge-quarto">0</span>
       </div>
       <div class="nav-item" onclick="showView('sala', this)" id="nav-sala">
-        <span class="nav-icon">🛋</span> Sala de estar
+        <span class="nav-icon">🛋️</span> Sala de estar
         <span class="nav-badge" id="badge-sala">0</span>
       </div>
       <div class="nav-item" onclick="showView('jantar', this)" id="nav-jantar">
-        <span class="nav-icon">🍽</span> Sala de jantar
+        <span class="nav-icon">🍽️️️</span> Sala de jantar
         <span class="nav-badge" id="badge-jantar">0</span>
       </div>
       <div class="nav-item" onclick="showView('banheiro', this)" id="nav-banheiro">
@@ -754,9 +754,9 @@
 <script>
 const ROOMS = {
   cozinha: { label: 'Cozinha', icon: '🍳' },
-  quarto:  { label: 'Quarto do casal', icon: '🛏' },
-  sala:    { label: 'Sala de estar', icon: '🛋' },
-  jantar:  { label: 'Sala de jantar', icon: '🍽' },
+  quarto:  { label: 'Quarto do casal', icon: '🛏️' },
+  sala:    { label: 'Sala de estar', icon: '🛋️' },
+  jantar:  { label: 'Sala de jantar', icon: '🍽️️️' },
   banheiro:{ label: 'Banheiro', icon: '🚿' },
 };
 
@@ -765,20 +765,20 @@ const SECTIONS = {
     { id:'eletro', label:'Eletrodomésticos', icon:'⚡', color:'#FAEEDA' },
     { id:'panelas', label:'Utensílios e panelas', icon:'🍳', color:'#E1F5EE' },
     { id:'organiza', label:'Organização e armazenamento', icon:'🗂', color:'#EEEDFE' },
-    { id:'mesa', label:'Mesa posta', icon:'🍽', color:'#E6F1FB' },
+    { id:'mesa', label:'Mesa posta', icon:'🍽️️️', color:'#E6F1FB' },
   ],
   quarto: [
-    { id:'cama', label:'Cama e roupa de cama', icon:'🛏', color:'#EEEDFE' },
+    { id:'cama', label:'Cama e roupa de cama', icon:'🛏️', color:'#EEEDFE' },
     { id:'qmoveis', label:'Móveis e organização', icon:'🗄', color:'#E1F5EE' },
     { id:'qilumi', label:'Iluminação e conforto', icon:'💡', color:'#FAEEDA' },
   ],
   sala: [
-    { id:'smoveis', label:'Móveis principais', icon:'🛋', color:'#E6F1FB' },
+    { id:'smoveis', label:'Móveis principais', icon:'🛋️', color:'#E6F1FB' },
     { id:'select', label:'Eletrônicos e entretenimento', icon:'📺', color:'#E1F5EE' },
     { id:'sdeco', label:'Decoração e iluminação', icon:'🪴', color:'#EAF3DE' },
   ],
   jantar: [
-    { id:'jmesa', label:'Mesa e cadeiras', icon:'🍽', color:'#FBEAF0' },
+    { id:'jmesa', label:'Mesa e cadeiras', icon:'🍽️️️', color:'#FBEAF0' },
     { id:'jdeco', label:'Iluminação e acabamento', icon:'💡', color:'#FAEEDA' },
   ],
   banheiro: [
